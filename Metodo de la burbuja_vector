@@ -1,0 +1,46 @@
+Algoritmo sin_titulo
+	definir i, vector, almacenar,x Como Entero
+	dimension vector[4]
+	
+	Para i<-1 Hasta 4 Con Paso 1 Hacer
+		vector[i]= azar(30)+1
+	Fin Para
+	Para i<-1 Hasta 3 Con Paso 1 Hacer
+		Para x<-1 Hasta 3 Con Paso 1 Hacer
+			Si vector[x] > vector[x+1] Entonces
+				temporal=vector[x]
+				vector[x]= vector[x+1]
+				vector[x+1]=almacenar
+			SiNo
+			Fin Si
+		Fin Para
+	Fin Para
+	 Para i<-1 Hasta 4 Con Paso 1 Hacer
+		Escribir vector[i]
+	Fin Para
+	
+FinAlgoritmo
+
+
+Algoritmo sin_titulo
+	definir i, vector,almacenar,x Como Entero
+	dimension vector[4]
+	
+	Para i<-1 Hasta 4 Con Paso 1 Hacer
+		Escribir " Ingrese un n�mero "
+		Leer vector[i]
+	Fin Para
+	Para i<-1 Hasta 3 Con Paso 1 Hacer
+		Para x<-1 Hasta 3 Con Paso 1 Hacer
+			Si vector[x] > vector[x+1] Entonces
+				almacenar=vector[x]
+				vector[x]= vector[x+1]
+				vector[x+1]=almacenar
+			SiNo
+			Fin Si
+		Fin Para
+	Fin Para
+	Para i<-1 Hasta 4 Con Paso 1 Hacer
+		Escribir vector[i]
+	Fin Para
+FinAlgoritmo
